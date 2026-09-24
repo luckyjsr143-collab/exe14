@@ -1,27 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Select Menu</title>
     <style>
-        select{
-            background-color: rgb(160, 237, 239);
-            color: rgb(6, 6, 6);
-            border-radius: 5px;
-            padding: 5px;
-            font-weight: bold;
+      select {
+        /* पूरे पेज का बैकग्राउंड और फॉन्ट ठीक करने के लिए */
+        body {
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          background-color: #f4f7f6;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          margin: 0;
         }
+
+        /* आपके ड्रॉपडाउन मेन्यू (Select) की नई मॉडर्न स्टाइल */
+        select {
+          background-color: #ffffff; /* साफ़ सफ़ेद बैकग्राउंड */
+          color: #333333; /* डार्क ग्रे टेक्स्ट जो आँखों को अच्छा लगे */
+          border: 2px solid #007bff; /* सुंदर ब्लू कलर का बॉर्डर */
+          border-radius: 8px; /* कोनों को और स्मूथ गोल करने के लिए */
+          padding: 12px 20px; /* अंदर थोड़ी और जगह (Spacing) देने के लिए */
+          font-size: 16px; /* टेक्स्ट का साइज थोड़ा बड़ा */
+          font-weight: bold;
+          cursor: pointer; /* माउस ले जाने पर हाथ का निशान बने */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* नीचे हल्की सी सुंदर परछाई (Shadow) */
+          outline: none;
+          transition: all 0.3s ease; /* बदलाव को स्मूथ बनाने के लिए */
+        }
+
+        /* जब कोई ड्रॉपडाउन पर क्लिक करे (Hover/Focus) */
+        select:hover {
+          border-color: #0056b3;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* लिंक (Hyperlink) की सुंदर स्टाइल */
+        a {
+          margin-top: 20px;
+          font-size: 16px;
+          color: #007bff;
+          text-decoration: none;
+          font-weight: bold;
+          border-bottom: 2px solid transparent;
+          transition: all 0.3s ease;
+        }
+        a:hover {
+          color: #0056b3;
+          border-bottom-color: #0056b3; /* माउस ले जाने पर नीचे लाइन आएगी */
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <select>
-        <option>Momos</option>
-        <option>Chicken</option>
-        <option>Chilli</option>
-        <option>Roll Chicken</option>
-        <option>Pizza</option>
-        <option value="250 rs">Burger</option>
+      <option>Momos</option>
+      <option>Chicken</option>
+      <option>Chilli</option>
+      <option>Roll Chicken</option>
+      <option>Pizza</option>
+      <option value="250 rs">Burger</option>
     </select>
-</body>
+    <br>
+<!-- दूसरे नए पेज पर जाने का लिंक -->
+<a href="about.html">मेरे बारे में जानने के लिए यहाँ क्लिक करें →</a>
+
+  </body>
 </html>
